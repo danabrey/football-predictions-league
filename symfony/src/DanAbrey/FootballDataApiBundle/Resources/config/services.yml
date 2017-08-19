@@ -1,0 +1,4 @@
+services:
+    football_data_api:
+        class: DanAbrey\FootballDataApiBundle\Service\FootballDataApi
+        arguments: ['@service_container', '%football_api.base_uri%', '%football_api.token%']
